@@ -1,9 +1,14 @@
 import {Menu} from "antd";
 import {AppstoreOutlined, ShopOutlined, ShoppingCartOutlined, UserOutlined} from "@ant-design/icons";
+import {useNavigate} from "react-router-dom";
+
 const Sidemenu = () => {
+    const navigate = useNavigate();
     return (
         <div className="SideMenu">
-            <Menu items={[
+            <Menu 
+            onClick={(item)=>{navigate(item.key)}}
+            items={[
                 {
                     label:"Dashboard",
                     icon:<AppstoreOutlined/>,

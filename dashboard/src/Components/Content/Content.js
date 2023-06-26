@@ -1,6 +1,9 @@
+import AppRoutes from "../Routes/Routes";
 const Content = () => {
     return (
-        <div className="PageContent">Footer</div>
+        <div className="PageContent">
+            <AppRoutes/>
+        </div>
     );
 }
 

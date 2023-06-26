@@ -1,7 +1,8 @@
-import Typography from "antd";
+import {Typography} from "antd";
 const Inventory = () =>{
     return(
         <div>
+            <Typography.Title level={4}> Inventory</Typography.Title>
             <Typography.Text>Inventory</Typography.Text>
         </div>)
 }
