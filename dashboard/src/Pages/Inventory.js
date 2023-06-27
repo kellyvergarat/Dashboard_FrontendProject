@@ -1,7 +1,6 @@
 import { Avatar, Rate, Space, Table, Typography } from "antd";
 import { useEffect, useState } from "react";
 import { getInventory } from "../API";
-import { Title } from "chart.js";
 
 const Inventory = () => {
   const [loading, setLoading] = useState(false);
@@ -11,6 +10,7 @@ const Inventory = () => {
     setLoading(true);
     getInventory().then((res) => {
       setDataSource(res.products);
+      setLoading(false);
     });
   }, []);
 
@@ -18,6 +18,7 @@ const Inventory = () => {
     <Space size={20} direction="vertical">
       <Typography.Title level={4}> Inventory</Typography.Title>
       <Table
+        loading={loading}
         columns={[
           {
             title: "Thumbnail",
