@@ -21,7 +21,7 @@ const Orders = () => {
         loading={loading}
         columns={[
           {
-            title: "Name",
+            title: "Title",
             dataIndex: "title",
           },
           {
