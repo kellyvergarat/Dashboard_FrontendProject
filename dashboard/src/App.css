@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  /* width: 90vw; */
   height: 90vh;
 }
 
@@ -48,19 +48,6 @@
 .PageContent {
   padding-left: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
